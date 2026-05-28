@@ -1,8 +1,8 @@
 /*------------------------------------------------------------
 Fichier: cpr.c
 
-Nom:
-Numero d'etudiant:
+Nom et Numéro étudiant: Océane Prud'Homme (300272920) et Lili Rose Théoret (300342096)
+
 
 Description: Ce programme contient le code pour la creation
              d'un processus enfant et y attacher un tuyau.
@@ -13,6 +13,12 @@ Explication du processus zombie
 (point 5 de "A completer" dans le devoir):
 
 	(s.v.p. completez cette partie);
+	Un processus zombie est un processus enfant terminé dont le parent n’a pas encore récupéré le statut avec wait(). 
+	Il ne consomme pas de ressources, mais garde une entrée dans la table des processus. 
+	S’il y en a trop, ils peuvent empêcher la création de nouveaux processus
+	Lorsque le parent appelle wait(), le processus se termine normalement.
+	Site reference: https://www.geeksforgeeks.org/operating-systems/zombie-processes-prevention/
+
 
 -------------------------------------------------------------*/
 #include <stdio.h>
